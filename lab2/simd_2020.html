@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>GEOG5015_Lab2-starting-point</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Glasgow Index of Multiple Depreivative</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API !-->
+   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.css' rel='stylesheet'/>
+ 
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.css' type='text/css'/>
+  
+ </head>
+
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+
+  <div id='map'></div>
+    
+  <style>
+  #features {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 15px;
+    background: rgba(200, 200, 200, 0.35);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    max-width: 250px;
+  }
+  
+  #features h2 {
+    font-size: 18px;             /* Clear, readable size */
+    font-weight: 700;             /* Strong bold */
+    line-height: 1.2;
+    margin: 0 0 10px 0;           /* Spacing below header */
+    color: #2c3e50;               /* Professional dark blue-grey */
+    letter-spacing: -0.2px;
+  }
+  
+  #pd {
+    font-size: 14px;             /* Slightly smaller for hierarchy */
+    font-weight: 300;             /* Clean, light weight */
+    color: #555;
+    font-style: italic;           /* Good for "instructional" text */
+  }
+</style>
+
+<div class="map-overlay" id="features">
+  <h2>Scottish Index of Multiple Deprivation (SIMD)</h2>
+  <div id="pd">
+    <p>Hover over a Data Zone!</p>
+  </div>  
+</div>  
+  </div> 
+    
+    
+  <div class="map-overlay" id="legend" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: rgba(200, 200, 200, 0.3); padding: 10px; border-radius: 2px; box-shadow: -0.4px 0.5px 0px rgba(100,100,100,0.5); line-height: 2;">
+    <div style="font-size: 16px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; color: #333;">
+        Legend
+    </div>
+    <div style="font-size: 13px; font-weight: 400; color: #666; display: flex; align-items: center;">
+        <span style="font-weight: 600; margin-right: 1px;">&#8592;</span> More Deprived
+    </div>
+</div>
+</body>
+
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
